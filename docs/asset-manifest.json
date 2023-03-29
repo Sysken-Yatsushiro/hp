@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/hp/static/css/main.a7b39a95.css",
+    "main.js": "/hp/static/js/main.d27584a3.js",
+    "static/media/processingEditor.png": "/hp/static/media/processingEditor.69286ef1d66ff04ee384.png",
+    "static/media/webApp.png": "/hp/static/media/webApp.b37506a52f7dd5e14c70.png",
+    "static/media/processingGame.png": "/hp/static/media/processingGame.b16c1cbbc9ddb024f13f.png",
+    "index.html": "/hp/index.html",
+    "main.a7b39a95.css.map": "/hp/static/css/main.a7b39a95.css.map",
+    "main.d27584a3.js.map": "/hp/static/js/main.d27584a3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a7b39a95.css",
+    "static/js/main.d27584a3.js"
+  ]
+}

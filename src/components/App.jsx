@@ -25,22 +25,19 @@ export default function App() {
       <Hero className="bg-gradient-to-br from-primary to-secondary text-primary-content">
         <Heading>情報システム研究部</Heading>
         <SubHeading>プログラミング、興味ありませんか？</SubHeading>
-        <div class="mockup-code border-primary-content w-full max-w-xs flex-1 border-2 border-opacity-20 bg-transparent pb-6 text-left text-current lg:mx-0">
-          <pre data-prefix="$">
-            <code className="font-bold">共通教育科棟 2F</code>
-          </pre>
-          <pre data-prefix="$">
-            <code className="font-bold">多目的セミナー室</code>
-          </pre>
-          <pre data-prefix="$">
-            <code>------------------</code>
-          </pre>
-          <pre data-prefix="$">
-            <code className="font-bold">月～木</code>
-          </pre>
-          <pre data-prefix="$">
-            <code className="font-bold">16:30～18:30</code>
-          </pre>
+        <div class="mockup-code border-primary-content w-full max-w-sm flex-1 border-2 border-opacity-20 bg-transparent pb-6 text-left text-current lg:mx-0">
+          <pre data-prefix="$"><code>共通教育科棟 2F</code></pre>
+          <pre data-prefix="$"><code>多目的セミナー室にて活動中</code></pre>
+          <pre data-prefix="$"></pre>
+          <pre data-prefix="$"><code>月～木</code></pre>
+          <pre data-prefix="$"><code>16:30～18:30に来てね！</code></pre>
+        </div>
+        <div class="mockup-code mt-4 border-primary-content w-full max-w-sm flex-1 border-2 border-opacity-20 bg-transparent pb-6 text-left text-current lg:mx-0">
+          <pre data-prefix="$"><code>部長のメールアドレス:</code></pre>
+          <pre data-prefix="$"><code>mi0143shim@g.kumamoto-nct.ac.jp</code></pre>
+          <pre data-prefix="$"></pre>
+          <pre data-prefix="$"><code>部長のTeams:</code></pre>
+          <pre data-prefix="$"><code>mi0143shim@kumamoto.kosen-ac.jp</code></pre>
         </div>
       </Hero>
       <Hero className="bg-base-200">
@@ -68,8 +65,8 @@ export default function App() {
         <Heading>ゲーム作成</Heading>
         <SubHeading>面白いゲームがない！？作るか！</SubHeading>
         <p>実は、ゲーム作りとはとても骨が折れる作業である。</p>
-        <p>ランキング上位のゲームはおろか、Steamに安売りされているようなゲームでさえ、</p>
-        <p>ひとりで作るならそこそこ手間がかかるだろう。</p>
+        <p>有名タイトルはもちろん、Steamに安売りされているようなゲームでさえ、</p>
+        <p>ひとりで作るならけっこう手間がかかる。</p>
         <p>決して甘くはない道だが、乗り越えたときに得られるものは計りしれないだろう。</p>
         <img src={pGame} alt="" className="pt-4" />
         <ToolBox>
@@ -84,7 +81,7 @@ export default function App() {
         <p>高専プログラミングコンテストとは、自由部門、課題部門、競技部門の三部門に分かれ、</p>
         <p>全国の高専生が技術力を競い合う大会である。</p>
         <img src={procon1} alt="" className="mt-4 mb-12" />
-        <p>厳しい戦いではあるが、実績のほかにも、企業とのコネクションが得られる。</p>
+        <p>厳しい戦いではあるが、実績づくりに加え、企業とのコネクションもできる。</p>
         <p>ここに出場することによって得られるものは多いだろう。</p>
         <p>なお、プロコンのための活動は、単位として申請できる。</p>
         <img src={procon2} alt="" className="mt-4" />

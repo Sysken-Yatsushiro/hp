@@ -17,6 +17,7 @@ import logoVue from "../assets/logoVue.png"
 import logoP5 from "../assets/logoP5.png"
 import logoUnity from "../assets/logoUnity.png"
 import logoUE from "../assets/logoUE.png"
+import icoTeams from "../assets/icoTeams.svg"
 
 export default function App() {
   return (
@@ -25,19 +26,19 @@ export default function App() {
       <Hero className="bg-gradient-to-br from-primary to-secondary text-primary-content">
         <Heading>情報システム研究部</Heading>
         <SubHeading>プログラミング、興味ありませんか？</SubHeading>
-        <div class="mockup-code border-primary-content w-full max-w-sm flex-1 border-2 border-opacity-20 bg-transparent pb-6 text-left text-current lg:mx-0">
-          <pre data-prefix="$"><code>共通教育科棟 2F</code></pre>
-          <pre data-prefix="$"><code>多目的セミナー室にて活動中</code></pre>
-          <pre data-prefix="$"></pre>
-          <pre data-prefix="$"><code>月～木</code></pre>
-          <pre data-prefix="$"><code>16:30～18:30に来てね！</code></pre>
+        <p>多目的セミナー室（共通教育科棟 2F）にて、活動中。</p>
+        <p>月～木の、16:30～18:30に来てね！</p>
+        <p>質問等は、以下の連絡先から、部長までお願いします。</p>
+        <p>スパム送信等はご遠慮ください。</p>
+        <div className="glass rounded-box p-4 flex gap-4 mt-8">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+            <path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+          </svg>
+          <code>mi0143shim@g.kumamoto-nct.ac.jp</code>
         </div>
-        <div class="mockup-code mt-4 border-primary-content w-full max-w-sm flex-1 border-2 border-opacity-20 bg-transparent pb-6 text-left text-current lg:mx-0">
-          <pre data-prefix="$"><code>部長のメールアドレス:</code></pre>
-          <pre data-prefix="$"><code>mi0143shim@g.kumamoto-nct.ac.jp</code></pre>
-          <pre data-prefix="$"></pre>
-          <pre data-prefix="$"><code>部長のTeams:</code></pre>
-          <pre data-prefix="$"><code>mi0143shim@kumamoto.kosen-ac.jp</code></pre>
+        <div className="glass rounded-box p-4 flex gap-4 mt-8">
+          <img src={icoTeams} alt="" className="w-6 h-6 fill-current" />
+          <code>mi0143shim@g.kumamoto-nct.ac.jp</code>
         </div>
       </Hero>
       <Hero className="bg-base-200">

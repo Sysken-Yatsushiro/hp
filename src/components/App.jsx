@@ -38,7 +38,7 @@ export default function App() {
         </div>
         <div className="glass rounded-box p-4 flex gap-4 mt-8">
           <img src={icoTeams} alt="" className="w-6 h-6 fill-current" />
-          <code>mi0143shim@g.kumamoto-nct.ac.jp</code>
+          <code>mi0143shim@kumamoto.kosen-ac.jp</code>
         </div>
       </Hero>
       <Hero className="bg-base-200">

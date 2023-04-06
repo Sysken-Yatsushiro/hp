@@ -6,12 +6,17 @@ export default function Navbar() {
   const [isTransparent, setIsTransparent] = useState(true)
 
   const handleScroll = () => {
-    if (isTransparent && window.scrollY > 100) {
+    if (window.scrollY >= 50) {
       setIsTransparent(false)
-    } else if (!isTransparent && window.scrollY < 50) {
+    } else if (window.scrollY < 50) {
       setIsTransparent(true)
     }
   }
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll)
+    // eslint-disable-next-line
+  }, [])
 
   const goTop = () => {
     window.scrollTo({
@@ -19,10 +24,6 @@ export default function Navbar() {
       behavior: "smooth",
     })
   }
-
-  useEffect(() => {
-    window.addEventListener('scroll', handleScroll)
-  })
 
   return (
     <div className={"navbar flex w-full h-20 fixed top-0 z-30 bg-opacity-90 backdrop-blur transition-all duration-200 " + (isTransparent ? "text-primary-content" : "bg-base-100 text-base-content shadow")}>

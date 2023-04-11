@@ -34,7 +34,7 @@ export default function Navbar() {
         </button>
       </div>
       <div className="flex flex-grow-0">
-        <a href="https://chonai-flora.github.io/p5-sketches" className="btn btn-ghost normal-case">Processingゲーム</a>
+        <a href="https://chonai-flora.github.io/p5-sketches" className="btn btn-ghost">processingゲーム</a>
         <a href="https://github.com/Sysken-Yatsushiro" className="btn btn-ghost"><GithubIcon /></a>
       </div>
     </div>

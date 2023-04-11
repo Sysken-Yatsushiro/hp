@@ -30,7 +30,7 @@ export default function Navbar() {
       <div className="flex-grow">
         <button onClick={goTop} className="btn btn-lg btn-ghost text-xl">
           <SyskenIcon />
-          <span className="ml-2">シス研</span>
+          <span className="ml-2 font-bold">シス研</span>
         </button>
       </div>
       <div className="flex flex-grow-0">

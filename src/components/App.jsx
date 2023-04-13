@@ -5,6 +5,7 @@ import SubHeading from "./SubHeading"
 import Tool from "./Tool"
 import ToolBox from "./ToolBox";
 import SyskenIcon from "./SyskenIcon";
+import Badge from "./Badge";
 import pEdi from "../assets/processingEditor.png"
 import pGame from "../assets/processingGame.png"
 import wApp from "../assets/webApp.png"
@@ -18,8 +19,18 @@ import logoP5 from "../assets/logoP5.png"
 import logoUnity from "../assets/logoUnity.png"
 import logoUE from "../assets/logoUE.png"
 import icoTeams from "../assets/icoTeams.svg"
+import { useEffect, useState } from "react";
+import { ReactMarkdown } from "react-markdown/lib/react-markdown";
 
 export default function App() {
+  const [news, setNews] = useState("")
+
+  useEffect(() => {
+    fetch("https://raw.githubusercontent.com/Sysken-Yatsushiro/hp/master/news.md")
+      .then(response => response.text())
+      .then(response => {setNews(response)})
+  }, [])
+
   return (
     <>
       <Navbar />
@@ -36,9 +47,21 @@ export default function App() {
           </svg>
           <code>mi0143shim@g.kumamoto-nct.ac.jp</code>
         </div>
-        <div className="glass rounded-box p-4 flex gap-4 mt-8">
+        <div className="glass rounded-box p-4 flex gap-4 mt-4">
           <img src={icoTeams} alt="" className="w-6 h-6 fill-current" />
           <code>mi0143shim@kumamoto.kosen-ac.jp</code>
+        </div>
+        <div className="card glass mt-8">
+          <div className="card-body">
+            <ReactMarkdown
+              components={{
+                h1: SubHeading,
+                code: Badge
+              }}
+            >
+              {news}
+            </ReactMarkdown>
+          </div>
         </div>
       </Hero>
       <Hero className="bg-base-200">

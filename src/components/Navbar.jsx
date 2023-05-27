@@ -1,6 +1,7 @@
 import SyskenIcon from "./SyskenIcon"
 import { useState, useEffect } from "react"
 import GithubIcon from "./GithubIcon"
+import TwitterIcon from "./TwitterIcon"
 
 export default function Navbar() {
   const [isTransparent, setIsTransparent] = useState(true)
@@ -36,6 +37,7 @@ export default function Navbar() {
       <div className="flex flex-grow-0">
         <a href="https://chonai-flora.github.io/p5-sketches" className="btn btn-ghost normal-case">Processingゲーム</a>
         <a href="https://github.com/Sysken-Yatsushiro" className="btn btn-ghost"><GithubIcon /></a>
+        <a href="https://twitter.com/sysken_8can" className="btn btn-ghost"><TwitterIcon /></a>
       </div>
     </div>
   )

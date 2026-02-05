@@ -5,7 +5,6 @@ import SubHeading from "./SubHeading"
 import Tool from "./Tool"
 import ToolBox from "./ToolBox";
 import SyskenIcon from "./SyskenIcon";
-import Badge from "./Badge";
 import pEdi from "../assets/processingEditor.png"
 import pGame from "../assets/processingGame.png"
 import wApp from "../assets/webApp.png"
@@ -18,7 +17,6 @@ import logoVue from "../assets/logoVue.png"
 import logoP5 from "../assets/logoP5.png"
 import logoUnity from "../assets/logoUnity.png"
 import logoUE from "../assets/logoUE.png"
-import icoTeams from "../assets/icoTeams.svg"
 import { useEffect, useState } from "react";
 import { ReactMarkdown } from "react-markdown/lib/react-markdown";
 
@@ -34,24 +32,12 @@ export default function App() {
   return (
     <>
       <Navbar />
-      <Hero className="bg-gradient-to-br from-primary to-secondary text-primary-content">
+      <Hero className="bg-gradient-to-br from-primary to-secondary text-primary-content h-[90vh]">
         <Heading>情報システム研究部</Heading>
         <SubHeading>プログラミング、興味ありませんか？</SubHeading>
-        <p>STEAM第2演習室(図書館棟1F)にて活動中です！</p>
-        <p>月~木の16:30~18:30に来てね！</p>
+        <p className="mt-6 font-bold">STEAM第2演習室(図書館棟1F)にて活動中です！</p>
+        <p className="font-bold">月~木の16:30~18:30に来てね！</p>
         <br />
-        <p>質問や入部希望等は以下の連絡先、</p>
-        <p>もしくはTwitter(<a href="https://twitter.com/sysken_8can" className="underline">@sysken_8can</a>)のDMまでお願いします！</p>
-        <div className="glass rounded-box p-4 flex gap-4 mt-8">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
-            <path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
-          </svg>
-          <code>mi0143shim@g.kumamoto-nct.ac.jp</code>
-        </div>
-        <div className="glass rounded-box p-4 flex gap-4 mt-4">
-          <img src={icoTeams} alt="" className="w-6 h-6 fill-current" />
-          <code>mi0143shim@kumamoto.kosen-ac.jp</code>
-        </div>
         <div className="card glass mt-8">
           <div className="card-body">
             <SubHeading>新着情報</SubHeading>

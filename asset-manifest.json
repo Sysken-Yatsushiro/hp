@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/hp/static/css/main.d046311d.css",
-    "main.js": "/hp/static/js/main.027e332a.js",
+    "main.css": "/hp/static/css/main.d68184bc.css",
+    "main.js": "/hp/static/js/main.97fa30d1.js",
     "static/media/procon2.png": "/hp/static/media/procon2.c66b81119bf6e3ce9eae.png",
     "static/media/phoneDev.png": "/hp/static/media/phoneDev.0542ba07862652d8d6f1.png",
     "static/media/procon1.png": "/hp/static/media/procon1.bd7dba0b9d0aa21f1054.png",
@@ -15,11 +15,11 @@
     "static/media/logoFlutter.png": "/hp/static/media/logoFlutter.620a21dd750668e17bfc.png",
     "static/media/logoReact.png": "/hp/static/media/logoReact.43636308b2163e51f54e.png",
     "index.html": "/hp/index.html",
-    "main.d046311d.css.map": "/hp/static/css/main.d046311d.css.map",
-    "main.027e332a.js.map": "/hp/static/js/main.027e332a.js.map"
+    "main.d68184bc.css.map": "/hp/static/css/main.d68184bc.css.map",
+    "main.97fa30d1.js.map": "/hp/static/js/main.97fa30d1.js.map"
   },
   "entrypoints": [
-    "static/css/main.d046311d.css",
-    "static/js/main.027e332a.js"
+    "static/css/main.d68184bc.css",
+    "static/js/main.97fa30d1.js"
   ]
 }

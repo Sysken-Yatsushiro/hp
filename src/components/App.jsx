@@ -32,7 +32,7 @@ export default function App() {
   return (
     <>
       <Navbar />
-      <Hero className="bg-gradient-to-br from-primary to-secondary text-primary-content h-[90vh]">
+      <Hero className="bg-gradient-to-br from-primary to-secondary text-primary-content min-h-[90vh]">
         <Heading>情報システム研究部</Heading>
         <SubHeading>プログラミング、興味ありませんか？</SubHeading>
         <p className="mt-6 font-bold">STEAM第2演習室(図書館棟1F)にて活動中です！</p>
